@@ -4,23 +4,15 @@
     "url": "https://discord.com/app",
     "logoSvgFilePath": "../../resources/datcord.svg",
     "platforms": [
-        "linux",
-        "deb",
-        "appimage",
-        "linux-aarch64",
-        "appimage-aarch64",
-        "deb-aarch64",
-        "windows",
-        "mac-arm",
-        "mac-intel"
+        "linux"
     ],
     "extensionURLs": [],
-    "version": "0.6.2",
-    "author": "gamingdoom",
-    "projectDescription": "An open-source Discord client using Firefox.",
-    "projectURL": "https://github.com/gamingdoom/datcord",
-    "projectHelpURL": "https://github.com/gamingdoom/datcord/issues",
+    "version": "0.6.2-refined",
+    "author": "spivanatalie64",
+    "projectDescription": "A refined, privacy-respecting open-source Discord client using Firefox. Forked from gamingdoom/datcord and enhanced.",
+    "projectURL": "https://github.com/spivanatalie64/datcord",
+    "projectHelpURL": "https://github.com/spivanatalie64/datcord/issues",
     "openInDefaultBrowser": true,
-    "openInDefaultBrowserRegex": "http[s]?://discord.com",
+    "openInDefaultBrowserRegex": "http[s]?://discord\\.com/channels/\\d+|http[s]?://discord\\.com/guilds/\\d+|http[s]?://discord\\.com/invite/",
     "runInBackground": true
 }

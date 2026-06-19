@@ -1,0 +1,95 @@
+/* ===========================================================
+   Datcord - Custom UI chrome for the Firefox frame
+   Hide browser chrome so only Discord is visible
+   =========================================================== */
+
+/* Hide the tab bar - we don't need tabs in a PWA */
+#TabsToolbar {
+    visibility: collapse !important;
+}
+
+/* Hide the navigation bar */
+#nav-bar {
+    visibility: collapse !important;
+}
+
+/* Hide the sidebar header */
+#sidebar-box {
+    --sidebarheader-border-top: none !important;
+}
+
+/* Hide the bookmarks toolbar */
+#PersonalToolbar {
+    display: none !important;
+}
+
+/* Make the title bar use minimal space */
+#titlebar {
+    display: none !important;
+}
+
+/* Hide the menu bar */
+#toolbar-menubar {
+    display: none !important;
+}
+
+/* Remove the sidebar splitter */
+#sidebar-splitter {
+    display: none !important;
+}
+
+/* Hide the status panel */
+#statuspanel {
+    display: none !important;
+}
+
+/* Make the content area take full window */
+#appcontent {
+    background: #313338 !important;
+}
+
+/* Custom scrollbar for the Firefox chrome */
+:root {
+    scrollbar-width: thin !important;
+    scrollbar-color: #1e1f22 #313338 !important;
+}
+
+/* Remove window borders and rounded corners when maximized */
+:root[sizemode="maximized"] #navigator-toolbox {
+    padding-top: 0 !important;
+}
+
+/* Hide developer tools button */
+#developer-button {
+    display: none !important;
+}
+
+/* Hide all extension icons in the toolbar */
+#unified-extensions-button {
+    display: none !important;
+}
+
+/* Hide downloads button */
+#downloads-button {
+    display: none !important;
+}
+
+/* Hide FxA button */
+#fxa-toolbar-menu-button {
+    display: none !important;
+}
+
+/* Hide the Library button */
+#library-button {
+    display: none !important;
+}
+
+/* Remove bottom padding */
+#browser-panel {
+    padding-bottom: 0 !important;
+}
+
+/* Full window content */
+#browser {
+    --browser-area-background: #313338 !important;
+}
