@@ -6,7 +6,9 @@
     "platforms": [
         "linux"
     ],
-    "extensionURLs": [],
+    "extensionURLs": [
+    "https://github.com/spivanatalie64/datcord/releases/download/latest/datcord-enhancement.xpi"
+],
     "version": "0.6.2-refined",
     "author": "spivanatalie64",
     "projectDescription": "A refined, privacy-respecting open-source Discord client using Firefox. Forked from gamingdoom/datcord and enhanced.",

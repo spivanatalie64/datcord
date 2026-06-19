@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  "name": "Datcord Enhancement Suite",
+  "version": "0.1.0",
+  "description": "Built-in Discord enhancements for Datcord: Vencord-compatible modding, CSP bypass, native integrations",
+  "author": "Natalie Spiva",
+  "homepage_url": "https://github.com/spivanatalie64/datcord",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.discord.com/*",
+    "*://*.discordapp.com/*",
+    "*://*.discord.media/*",
+    "*://*.discord.net/*",
+    "storage",
+    "unlimitedStorage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.discord.com/*"],
+      "run_at": "document_start",
+      "js": ["content/injector.js"],
+      "all_frames": true
+    }
+  ],
+
+  "background": {
+    "scripts": ["background/csp-bypass.js"],
+    "persistent": true
+  },
+
+  "options_ui": {
+    "page": "settings/index.html",
+    "open_in_tab": false
+  },
+
+  "web_accessible_resources": [
+    "inject/*.js",
+    "inject/*.css"
+  ]
+}
